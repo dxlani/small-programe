@@ -7,9 +7,9 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"miniprogramRoot": "./dist/",
+	"miniprogramRoot": "dist/",
 	"compileType": "miniprogram",
-	"appid": "touristappid",
+	"appid": "wx0f12a6d8945a08a4",
 	"projectname": "wxmp-demo",
 	"libVersion": "2.2.1",
 	"condition": {
