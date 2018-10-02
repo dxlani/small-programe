@@ -4,6 +4,7 @@
     <p >ver: {{ ver }}</p>
     <button @click="testFun">testFun</button>
     <button @click="testFun2">testFun2</button>
+    <div v-for="item in dxl">{{item}}</div>
   </div>
 </template>
 <!--必须指定为ts-->
