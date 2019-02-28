@@ -8,6 +8,23 @@
     <a :href="AppUrls.COUNTER" class="home">去往vuex</a>
     <a :href="AppUrls.PACKAGE_A" class="home">分包A</a>
     <a href="/pages/testExtend/main" class="home">测试继承</a>
+    <span>test</span>
+    <div v-for="item in dxl" :key="item">{{item}}</div>
+    <view class="group" @click="testclick()">
+      <block v-for="item in iconSize" :key="item">
+        <icon type="success" :size="item"/>
+      </block>
+    </view>
+    <view class="group">
+      <block  v-for="item in iconType" :key="item">
+        <icon :type="item" size="40"/>
+      </block>
+    </view>
+    <view class="group">
+      <block  v-for="item in iconColor" :key="item">
+        <icon type="success" size="40" :color="item"/>
+      </block>
+    </view>
   </div>
 </template>
 <!--必须指定为ts-->
@@ -15,7 +32,7 @@
 </script>
 
 
-<style lang="less">
+<style lang="less" >
   @import "./index";
 
   .counter-warp {

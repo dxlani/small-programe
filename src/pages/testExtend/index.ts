@@ -13,9 +13,10 @@ class Index extends Mixins(BaseComp) {
   onShow() { // 小程序 hook
     debug('onShow')
   }
-
+  dxl:Array<string>=[];
   mounted() { // vue hook
     debug('mounted')
+    this.dxl=['1','2','3']
   }
 }
 
